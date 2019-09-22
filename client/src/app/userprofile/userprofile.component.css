@@ -1,0 +1,12 @@
+
+#profile{
+    float:left;
+    width:10%;
+    overflow:hidden;
+}
+
+#profile-details{
+    float:left;
+    width:20%;
+    overflow:hidden;
+}

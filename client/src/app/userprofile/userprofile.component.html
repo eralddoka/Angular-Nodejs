@@ -1,0 +1,16 @@
+<p>
+    <button type="button" (click)="getRepos()">Pull Starred Repos</button> | <button [routerLink]="['/login']" (click)="logout()">Logout</button>
+</p>
+<h1>Welcome {{user.name}}</h1>
+<div id="profile">
+   <img src="{{user.avatar_url}}" width="100" height="100" />
+</div>
+
+<div id="profile-details">
+    <p>Location: {{user.location}}</p>
+    <p>Followers: {{user.followers}}</p>
+    <p>Following: {{user.following}}</p>
+ </div>
+<ul *ngFor="let repo of repos">
+    <li>{{ repo.name }}</li>
+</ul>
